@@ -1,7 +1,7 @@
 import Board from "./components/Board/Board";
-// import Modal from "./components/modal";
 import Start from "./components/Start/Start";
 import './App.css';
+import { Modal } from "./components/modal/modal";
 
 function App() {
   return (
@@ -10,9 +10,10 @@ function App() {
 
         {/* <Start /> */}
         <Board />
-
-      </div>
+        </div>
+      <Modal />
     </div>
+
   );
 }
 

@@ -44,15 +44,15 @@ const board = () => {
       <div className='coody__footer'>
 <div className='card bg-light'>
   <p className='text-light'>x(you)</p>
-  <strong className='text-2xl'>10</strong>
+  <strong className='text-2xlg text-light'>10</strong>
 </div>
 <div className='card bg-gray'>
-  <p className='text-light'>x(you)</p>
-  <strong className='text-2xl'>10</strong>
+  <p className='text-light'>ties</p>
+  <strong className='text-2xlg text-light'>10</strong>
 </div>
 <div className='card bg-yellow'>
-  <p className='text-light'>x(you)</p>
-  <strong className='text-2xl'>10</strong>
+  <p className='text-light'>o(cpu)</p>
+  <strong className='text-2xlg text-light'>10</strong>
 </div>
       </div>
     </div>

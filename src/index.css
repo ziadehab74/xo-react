@@ -5,15 +5,16 @@
  }
 
  :root {
-   --color-bg-dark: #192a33;
-   --color-bg-light: #1f3640;
-   --color-gray: #a8bec9;
-   --color-gray-dark: #7a8991;
-   --color-yellow: #f2b238;
-   --color-yellow-dark: #cd8d16;
-   --color-blue: #30c4be;
-   --color-blue-dark: #12Bc89;
-   --shadow-y: 6px
+  --color-bg-dark: #192a33;
+  --color-bg-light: #1f3640;
+  --color-gray: #a8bec9;
+  --color-gray-dark: #7a8991;
+  --color-yellow: #f2b238;
+  --color-yellow-dark: #cd8d16;
+  --color-blue: #30c4be;
+  --color-blue-dark: #128c89;
+
+  --shadow-y: 6px;
  }
 
  body {
@@ -29,10 +30,10 @@
  }
 
  .container {
-   max-width: 450px;
-   width: 100%;
-   margin-inline: auto;
-   padding: 2rem 1rem;
+  max-width: 450px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 1rem;
  }
 
  html {
@@ -52,8 +53,11 @@
    text-align: center;
  }
 
+ .text-dark{
+  color: var(--color-bg-light);
+ }
  .text-light {
-   color: var(--color-gray-dark);
+  color: var(--color-bg-light);
  }
 
  .text-lg {
@@ -65,7 +69,7 @@
  }
 
  .text-2xlg {
-   font-size: 1.75rem;
+  font-size: 1.725rem;
  }
 
  .text-blue {
@@ -102,7 +106,21 @@
    transform: translateY(2px);
    box-shadow: 0 4px 0 var(--color-blue-dark);
  } */
+ .btn-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 var(--color-gray-dark);
+}
 
+.btn-light:active {
+  --shadow-y: 4px;
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 var(--color-gray-dark);
+}
+
+.btn-light {
+  background-color: var(--color-gray);
+  box-shadow: 0 var(--shadow-y) 0 var(--color-gray-dark);
+}
  .btn-blue:hover {
    transform: translateY(-2px);
    box-shadow: 0 8px 0 var(--color-blue-dark);
@@ -277,4 +295,47 @@ gap: 15px;
 
 .bg-light{
   background-color: var(--color-blue-dark);
+}
+.modal{
+  position: fixed;
+  top: 10;
+  left: 10;
+  width: 100vw;
+  height: 100vw; 
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+}
+.modal__content{
+  width: 100%;
+  background-color: var(--color-bg-light);
+}
+.score{
+  text-align: center;
+}
+.score__title{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 30px 0 ; 
+}
+.score__btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.Restart{
+  text-align: center;
+}
+.restart__index{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 30px 0; 
 }
